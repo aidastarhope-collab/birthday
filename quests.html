@@ -40,13 +40,13 @@ h1{margin:12px 0}
       <a href="quests.html">Quests</a>
       <a href="shop.html">Shop</a>
     </nav>
-    <div class="pill">🪙 Coins: <span id="coinCount">0</span></div>
+    <div class="pill">⛃ Coins: <span id="coinCount">0</span></div>
   </div>
 </header>
 
 <div class="container">
-  <h1>Quest Board 📜</h1>
-  <p class="note" style="color:var(--muted)">Complete little quests for bonus coins (+5 each).</p>
+  <h1>📜 Quests </h1>
+  <p class="note" style="color:var(--muted)">Complete these quests to get coins!</p>
   <div class="grid" id="questList"></div>
   <div style="margin-top:16px">
     <button class="btn ghost" id="resetBtn">Reset progress</button>
@@ -71,11 +71,11 @@ h1{margin:12px 0}
   function addCoins(n){ store.coins = Math.max(0, store.coins + n); var hud=document.getElementById('coinCount'); if(hud){ hud.textContent = String(store.coins); } }
 
   var defaultQuests = [
-    {id:'q1', text:'Tell me three birthday wishes ✨'},
-    {id:'q2', text:'Share a random photo from your week 📸'},
-    {id:'q3', text:'Pick a date idea for us 💡'},
-    {id:'q4', text:'Send me your favorite song today 🎵'},
-    {id:'q5', text:'Write one line you like about me 📝'}
+    {id:'q1', text:'tell me three birthday wishes ✨'},
+    {id:'q2', text:'smile 📸'},
+    {id:'q3', text:'choose what were gonna do today 💡'},
+    {id:'q4', text:'send me your favorite song of today 🎵'},
+    {id:'q5', text:'send me 5 cat tiktoks 🐱'}
   ];
 
   function renderQuests(){
